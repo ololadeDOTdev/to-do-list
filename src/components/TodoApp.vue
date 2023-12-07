@@ -1,7 +1,11 @@
 <template>
   <div class="container" style="max-width: 600px">
     <!-- Heading -->
-    <h2 class="text-center mt-5">My Vue Todo App</h2>
+    <h2 class="text-center mt-5">TaskMe</h2>
+    <h4>
+      Hello,
+      <input type="text" id="name" placeholder="Name please" v-model="name" />
+    </h4>
 
     <!-- Input -->
     <div class="d-flex mt-5">
@@ -11,7 +15,7 @@
         placeholder="Enter task"
         class="w-100 form-control"
       />
-      <button class="btn btn-warning rounded-0" @click="submitTask">
+      <button class="btn btn-warning rounded-0 boom" @click="submitTask">
         SUBMIT
       </button>
     </div>
@@ -78,15 +82,15 @@ export default {
       /* Status could be: 'to-do' / 'in-progress' / 'finished' */
       tasks: [
         {
-          name: "Steal bananas from the supermarket.",
+          name: "Go shoe shopping",
           status: "to-do",
         },
         {
-          name: "Eat 1 kg chocolate in 1 hour.",
+          name: "Buy a Pepperoni Pizza",
           status: "in-progress",
         },
         {
-          name: "Create YouTube video.",
+          name: "Create YouTube videos.",
           status: "finished",
         },
       ],
@@ -154,15 +158,31 @@ export default {
   cursor: pointer;
 }
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .line-through {
+  color: #999;
   text-decoration: line-through;
+}
+
+h4 {
+  margin: 30px 0 -30px 0;
+}
+.boom {
+  background-color: palevioletred;
+  font-weight: bold;
+}
+button:hover {
+  background-color: palevioletred;
+  opacity: 80%;
+  transition: 2s;
+}
+#name {
+  border: none;
 }
 </style>
