@@ -1,25 +1,3 @@
-# to-do-list
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# to-do-list
+This To-Do List application is designed to help you organize and manage your tasks effectively.
+Whether you're planning your day, making a shopping list, or outlining a project, 
+this tool offers a simple and intuitive interface to keep track of your tasks.
