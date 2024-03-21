@@ -48,7 +48,7 @@ npm run serve
 
 ## Deployment
 
-This project is deployed on Vercel. Any changes pushed to the main branch will trigger automatic deployments. You can access the live version of the application at [https://your-vercel-todo-list.vercel.app](https://your-vercel-todo-list.vercel.app).
+This project is deployed on Vercel. Any changes pushed to the main branch will trigger automatic deployments. You can access the live version of the application at [to-do-list-phi-inky.vercel.app].
 
 ## Contributing
 
